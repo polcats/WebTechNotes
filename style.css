@@ -1,0 +1,119 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* GENERAL DIVS */
+div.section {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+/* SPECIFIC CSS FOR PARALLAX EFFECT */
+div#cover {
+	padding-top: 15%;
+	background: transparent url("images/h.jpg") center center 
+		fixed no-repeat;
+}
+
+
+div#about {
+	padding-top: 20%;
+	background: transparent url("images/e.jpg") center center 
+		fixed no-repeat;
+}
+
+
+div#skills {
+	padding-top: 20%;
+	background: transparent url("images/d.jpg") center center 
+		fixed no-repeat;
+}
+
+div#backstory {
+	padding-top: 20%;
+	background: transparent url("images/n.jpg") center center 
+		fixed no-repeat;
+}
+
+
+
+div#education {
+	padding-top: 20%;
+	background: transparent url("images/c.jpg") center center 
+		fixed no-repeat;
+}
+
+div#contests {
+	padding-top: 20%;
+	background: transparent url("images/f.jpg") center center 
+		fixed no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NAVIGATION */
+div#nav_bg {
+	background: #000;
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	opacity: 0.8;
+	-moz-opacity: 0.8;
+}
+
+div#nav_wrap {
+	border-bottom: 3px solid #000;
+	width: 100%;
+	height: 100px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+div#nav_wrap ul {
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+	width: 70%;
+}
+div#nav_wrap li {
+	float: left;
+	line-height: 100px;
+	width: 16.66667%;
+	text-align: center;
+}
+div#nav_wrap li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 25px;
+}

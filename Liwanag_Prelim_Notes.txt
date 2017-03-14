@@ -1,0 +1,150 @@
+Feb 2, 2017
+HTTP functionality support
+	-cache control
+	-content media type (MIME) specification
+	-language and character specification
+	-content/transfer codings
+	-content negotiation
+	-client-server protocol negotiations
+	-persistent connections
+	-request pipeling
+	-authentication/authorization
+HTTP resource addressing
+	-scheme
+	-authority
+	    domain name
+	-port number
+	-path to resource
+	-query
+	    ?&=
+	-fragment identifier
+
+Feb 6, 2017
+HTTP Request Message
+	-request line (CRLF)
+	    Method
+	    Request URI
+	    HTTP Protocol Version
+	-message headers
+	    *HTTP 1.1 requires at least the host request header to be provided
+	-empty line (CRLF)
+	-message body aka payload
+HTTP Response Message
+	-status line
+	    HTTP Protocol Version
+	    Status Code
+	    Reason Phrase
+	-message headers
+	-empty line
+	-message body
+HTTP Request Methods
+GET, HEAD, POST, PUT, DELETE, OPTIONS, TRACE, CONNECT
+
+Feb 13, 2017
+Request Header Fields
+-Accept
+-Accept Charset
+-Acept Encoding
+-Accept Language
+-Authorization
+-Expect
+-From
+-Host
+-If-Match
+-If-Modified-Since
+-If-None-Match
+-Max-Forwards
+-Proxy Authentication
+-Range
+-Referer
+-TE
+-User-agent
+Response Header Fields
+-Accept Ranges
+-Age
+-ETag
+-Location
+-Proxy Authentication
+-Retry-After
+-Server
+-Vary
+-WWW Autthenticate
+Entity Header Fields 
+-Allow
+-Content Encoding
+-Content Language
+-Content Location
+-Content MD5
+-Content Length
+-Content Range
+-Content Type
+-Expires
+-Last Modified
+HTTP Status Code
+	-Informational (1xx)
+	    100 Continue
+	    101 Switching protocol
+	-Success (2xx)
+	    200 OK
+	    201 Created
+	    202 Accepeted
+	    203 Non-Authoritative Information
+	    204 No Content
+	    205 Reset Content
+	    206 Partial Content
+	-Redirectional (3xx)
+	    300 Multiple Choice
+	    301 Moved Permanently
+	    302 Found
+	    303 See Other
+	    304 Not Modified
+	    305 Use Proxy
+	    306 Switch Proxy
+	    307 Temporary Redirect
+	    308 Permanent Redirect
+	-Client Error (4xx)
+	    400 Bad Reqest
+	    401 Unauthorized
+	    402 Payment Required
+	    403 Forbidden
+	    404 Not Found
+	    405 Method Not Allowed
+	    406 Not Acceptable
+	    407 Proxy Authentication Required
+	    408 Request Time-out
+	    409 Conflict
+	    410 Gone
+	    411 Length Requred
+	    412 Precondition Failed
+	    413 Payload Too Large
+	    414 URI Too Long
+	    415 Unsupported Media Type
+	    416 Range Not Satisfiable
+	    417 Expectation Failed
+	    426 Upgrade Required
+	-Server Error
+	    500 Internal Server Error
+	    501 Not Implemented
+	    502 Bad Gateway
+	    503 Service Unavailable
+	    504 Gateway Time-out
+	    505 HTTP Version Not Supported
+
+Feb 20, 2017
+What is HTML?
+	-Language used to create web pages
+	-derived from SGML
+	-related to XML
+	
+-structure and content (HTML)
+-aesthetics (CSS)
+-behavioral (JS)
+Who invented HTML?
+	-Tim Berners-Lee
+Who oversees the development of HTML?
+	-World Wide Web Consortium
+What are the versions of HTML?
+	-current is 5.1
+	-original is HTML 1.0
+Which documents specify the HTML standards?
+	-W3C Recommendation

@@ -1,0 +1,123 @@
+Webtek Prelims 
+
+References:
+	RFCs for HTTP 1.1 (7230-7235)
+	RFC for HTTP 2.0 (7540)
+
+
+What is HTTP (Hypertext Transfer Protocol)
+	-Stateless communication protocol (Servers do not keep information about clients in- between requests. Neither do user agents)
+	-used in distributed, collaborated, and hypertext information systems
+	-Invented by Tim Berners Lee
+	-Its development is governed by the w3c (World Wide Web Consortium) and the Internet Engineering Task Force 
+
+	-Previous versions were HTTP 0.9, HTTP 1.0, HTTP 1.1, HTTP 2.0
+	-HTTP runs on top of TCP/IP and uses port 80 by default. For HTTPS it uses port 443 and it runs on top of SSL/TLS (Secured Line / Transport Layer Security)
+
+
+IP address + Port # = Socket
+Https-encrypted - Requests pass through an encryption tunnel
+If it is not encrypted, the packet on the wire will be in plain text format
+
+Clients == User Agents
+Servers == Origin servers
+
+Intermediary nodes- Devices that requests pass through in order to get to the origin server
+
+Kinds of intermediary nodes
+	Proxies- Message forwarding agent that is selected by the client, ussually via local configuration rules, to receive reqeuests
+			 For some kind of absolute URI and atttempt to satisfy those requests via translation through the HTTP interface.
+	Gateways- An origin server for the outbound connection but translates received requests and forwards them inbound to another server or servers
+	Tunnels- Acts as a blind relay between two connections without changing the messages. Once active, a tunnel is not considered a party to the 
+			 the HTTP communication (Typically used in SSL connections)
+
+
+HTTP uses a request response standard protocol (Response messages and request messages)
+
+Polling- Regular checks regarding new content. If there is new content then pull them, else do not do anything
+
+HTTP provides support for
+	-Cache control
+	-Content Media Type (MIME) specifications
+	-Language and character set specifications
+	-Content/transfer enconding
+	-Content Negotiation
+	-Protol Negotiation (Protocol switching can happen. Conforming to a version of the protocol in which both the client and the server supports)
+
+Persistent connections and Request Pipelining
+	-When establishing a socket connection it goes through these steps (request, response, disconnect)
+	-1 socket connection per request typically
+	-With persistent connections we can re use connnections 
+	-In HTTP 1.0 there are no persisten connections
+	-With each connection comes the setting up of buffers, parsers, handlers, sockets etc. 
+
+	-Request pipelining (Synchronization of requests to avoid load.)
+	-Can only make request after response and disconnection
+
+HTTP resource addressing 
+	-Identification of different resources
+	-Retrieving resources requires naming them
+	-The resources are identified using URIs
+
+		URI
+	   |  |
+	URN		URL
+
+	URN- Simply refers to name (e.g ISBN)
+	URL- Uniform resource locator. Identifiers and specifiers on how to find and access info
+
+
+	HTTP URI scheme
+	  http-URI = "http: " "//" authority path-abempty [ "?" query] [ "#" fragment]
+	  - origin server for an "http" URI is identified by the authority component, which includes
+	  	a host identifier and optional TCP port.
+	  -By default, if port is not specified then TCP port 80 will be used by default
+	  -Domain names are always resolved to IP addresses 
+
+
+	HTTPS URI scheme
+	 -HTTPS-URI="https:" "//" authority path-abempty [ "?" query ] [ "#" fragment]
+	 -Note that the "https" URI scheme depends on both TLS and TCP for establishing authority.
+
+	Format of HTTP request message 
+	  -Basically lines of text with specific parts
+	  -First line is request line. basically Request Method URI HTTP portocol version
+	  -Next lines would be the message headers (Usually conveys information about the request)
+	  -then empty line (CRLF)
+	  -then the optional message body/payload  
+	  -In HTTP 1.1 the HOST header is mandatory. In HTTP 1.0 it is not.
+
+	HTTP response messages
+	  -The response messages normally define the server
+	  -The first line in response messages follow this format (HTTP Protocol Version | Status code | Reason phrase )
+	  -Next are the message headers
+	  -Empy line (CRLF)
+	  -Optional message body (payload)
+
+	Standard HTTP request methods 
+		GET - Transfer representation of resource identified by the Request URI 
+		PUT - Literally put something in the server
+		HEAD - Get without the message body. Only headers
+		POST - Used to submit data in forms in a relatively safe manner
+		TRACE - Send request to server, the server mirrors that request back to client. Used in translating/debugging requests
+		OPTIONS - Answers the question, "What can I do as a client"
+		DELETE - Literally delete something
+		CONNECT - Use a tunnel in connecting to the origin server
+
+	Safe methods
+		-Methods that do not modify resources on the server
+
+	Idempotent methods
+		-Methods that retain functionality whatever happens
+
+	Cacheable
+		-A response is described as cacheable if a cache is allowed to store a copy of the response message for use in answering subsequent requests
+
+	General message header fields
+		-Cache control
+		-Date
+		-Time
+		-Pragma
+		-Directive
+		-Referer 
+		-Trailers (Message headers at the end)

@@ -1,0 +1,29 @@
+HTTP REQUEST METHODS
+
+	Standard Methods
+		Get --> retrieve, most commonly used
+		Head --> is not going to retrieve the message body, used to retrieve the metadata
+		Post --> typically used in submitting HTML form data
+		Put --> store the enclosed entity in the message body under URI
+		Delete --> removal of the entity in the message body under the URI
+		Options --> simply asking the server "What can I Do"
+		Trace --> for diagnostic purposes; request if a loop-back of the request message
+		Connect --> used simply to establish a tunnel
+
+		**safe methods --> if you use them, they do not cause any modification to the server
+		**idempotent --> the result of the first time you use, it is the same as the result as the result of the second time
+		**cacheble method ????????
+
+
+
+HTTP MESSAGE HEADERS
+	General Header Fields
+	Request Header Fields
+	Response Header Fields
+	Entity Header Fields
+
+	General HF --> can be used by clients & servers
+		(cache-control, connecting dock, trailer, Transfer encoding, Upgrade, Via, Warning)
+
+	Request HF
+		(Accept, Accept-Charset, Accept-Encoding, Accept-Language) --> for negotiations

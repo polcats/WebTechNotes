@@ -1,0 +1,34 @@
+INTERNET
+
+Internet
+	-Global Network
+	-global information system --> as defined by federal Networking Council (FNC)
+Short History
+	-1969 ARPANET & DARPANET --> research is on packet switched apps stored and forwarded
+	-1972 email was introduced
+	-1989 www was introduced
+Network
+	Nodes--> devices that are connected to the network
+	Interconnection Technology
+		wired
+		wireless-->don't have actual physical connection
+	Protocols--> communication standards that are being observed within the nodes
+			 --> should always follow one single standard
+	Network Tranceivers--> Put/detect signals on the wire
+	**NOTE: Protocols are in other words standards
+	IP Address--> used to identify uniquely the nodes connected to the net
+
+Characteristics Of Internet
+	Use of IP
+	Transmission Control Protocol --> support to TCP/IP
+	Provides /uses/ makes accessible either publicly/privately, high level services
+		Layered on the communications & related infrastracture
+
+1989 --> Tim Berners-Lee --> worked at CERN --> HTTP, HTML, URL, Web Services, Web Client --> Foundation of WWW
+WAIS(Wide Area Information Servers) --> periodically indexes the different servers and stores it into another web server the queried later.
+Gopher Protocol --> same as WAIS but it has now a little Hierarchy of documents
+Usenet --> is a world wide distributed discussion sytem available on computers
+
+Web Server --> Sole purpose is to serve the web
+Web Client --> Web Browsers
+**Resources are being addressed via hypertext links

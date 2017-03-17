@@ -1,0 +1,14 @@
+HTTP REQUEST ADDRESSING
+
+	http resources are identified using URI (RFC 3986)
+
+	Components
+		scheme(HTTP or HTTPS)
+		authority
+			user information(deprecated)
+			host --> simply where the resource to be created
+			port number
+		path to the resource --> start at the document root; static or dynamic resource
+		query --> starts with a  (?); typically provided as a key value with (&) --> separates parameters
+			  --> maybe URL encoded
+		fragment identifier --> starts with a (#) --> sometimes called a bookmark

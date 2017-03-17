@@ -1,0 +1,36 @@
+HTTP FUNDAMENTALS
+
+Hypertext Transfer Protocol(HTTP)
+	Invented by Tim Berners- Lee
+	jointly developed by W3c and the IETF(Internet Engineering Task Force)
+	HTTP 0.9(!991) Originally made by Tim Berners-Lee
+		-one way to get a request by "Get" was developed on this era
+	HTTP 1.0 (RFC 1995) May 1996
+	HTTP 1.1 (RFC 2068, RFC 2616) January 1997, June 1999
+	7230-7235(June 8 1999)
+	HTTP 2 (RFC 7540 May 2015)-->SPDY-->by Google-->backwards compatible
+
+Characteristics of a Protocol
+	TCP/IP--> main communication layer
+	Assigned to port 80 --> range of port is 0-64K
+	is based on a client-server architechture
+	clients a.k.a user agent(UA)--> web browsers, web crawlers, etc. tools & aps
+	Internet Assigned Numbers Authority (IANA), ICANN
+	Socket --> (Port + IP address)
+	HTTPS --> is for encrypted communication --> port 443
+	*Servers are usually an Origin Server(OS)
+	HTTP --> uses request-response standard protocol
+		client sends an HTTP Request message to the server -->"pull" & "poll"(e.g. regular check)
+		server process --> HTTP Response Message 'push" --> HTTP 2 --> server can notify
+	HTTP is a stateless communications protocols --> servers do not keep info
+	HTTP provides support for other functionalities such as:
+		cache control
+		content media type(MIME) specifications --> Multipurpose Internet Mail Extensions
+		language & character set specification
+		content / transfer codings
+		content negotiation
+		*NOTE: the 5 functionalities said above says that --> there has to be an agreement between client & server
+		client-server protocol negotiations
+		persistent connections **** This two functionalities was introduced on 1.1
+		request pipelining		*** and push protocol was introduced on HTTP 2
+		authentication/authorization

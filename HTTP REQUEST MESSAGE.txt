@@ -1,0 +1,13 @@
+HTTP REQUEST MESSAGE
+
+	Methods --> what the servers will have to do; toDo
+	Request URI
+	HTTP Protocol Version --> Version of the protocol that the client is using
+	Message Headers --> will contain additional info
+					-->(General Headers, Request Headers, Response Headers, Entity Header Fields)
+					General Headers --> server & client
+					Request Headers --> clients
+					Response Headers --> servers
+					Entity Header --> entities
+	Empty Line (CRLF) - to know when the message header is done
+	Message Body a.k.a. payload(optional) --> entity in a message body

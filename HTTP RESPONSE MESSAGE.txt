@@ -1,0 +1,9 @@
+HTTP RESPONSE MESSAGE
+	Status Line
+		HTTP Protocol Version
+		Status code- what is the result
+		Reason Phrase- description of the status code
+	Message Headers (General, Response and or entity headers)
+	EmptyLine (CRLF)
+	Message Body (optional)
+	

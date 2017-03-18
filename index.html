@@ -303,17 +303,94 @@
 
 
 	<section class="sect">
-	<h3 id="t5head">Topic 5 <span></span></h3>
+	<h3 id="t5head">HTTP REQUEST METHODS<span></span></h3>
 	<div id="topic5">
-			asdasdsadsadasdasdasdsadsadsadsadasdasdasdasdasd
+	  <h4>Standard Methods: </h4>
+	    <ul>
+	      <li>
+	      <span class="item">Get</span>
+	      <span class="desc">retrieve whatever information is identified by the Request-URI</span>
+	      <span class="desc">Must be supported by all compliant general purpose server</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Head</span>
+	      <span class="desc">identical to GET except that the server MUST NOT return a message-body in the response</span>
+	      <span class="desc">metainformation contained in the HTTP headers in response to a HEAD request SHOULD be identical to the information sent in response to a GET request</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Post</span>
+	      <span class="desc">is used to request that the origin server accept the entity enclosed in the request as a new subordinate of the resource identified by the Request-URI in the Request-Line</span>
+	      <span class="desc">identifies the resource that will handle the enclosed entity.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Put</span>
+	      <span class="desc">requests that the enclosed entity be stored under the supplied Request-URI.</span>
+	      <span class="desc">identifies the entity enclosed with the request -- the user agent knows what URI is intended and the server MUST NOT attempt to apply the request to some other resource.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Delete</span>
+	      <span class="desc">requests that the origin server delete the resource identified by the Request-URI.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Option</span>
+	      <span class="desc">represents a request for information about the communication options available on the request/response chain identified by the Request-URI.</span>
+	      <span class="desc">•	Allows the client to determine the options and/or requirements associated with a resource, or the capabilities of a server, without implying a resource action or initiating a resource retrieval.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Trace</span>
+	      <span class="desc">used to invoke a remote, application-layer loop-back of the request message.</span>
+	      <span class="desc">allows the client to see what is being received at the other end of the request chain and use that data for testing or diagnostic information.</span>
+	      <span class="desc">•	The final recipient of the request SHOULD reflect the message received back to the client as the entity-body of a 200 (OK) response.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Connect</span>
+	      <span class="desc">use with a proxy that can dynamically switch to being a tunnel</span>
+	      </li>
+	    </ul>
+
+	  <h4>Safe Methods: </h4>
+	    <ul>
+	      <li>
+	      <span class="item">SHOULD NOT have the significance of taking an action other than retrieval</span>
+	      <span class="desc">Get, Head, Option, Trace</span>
+	      </li>
+	    </ul>
+
+	  <h4>Idempotent Methods: </h4>
+	    <ul>
+	      <li>
+	      <span class="item">Can be used several times without the output being changed.</span>
+	      </li>
+	    </ul>
+
+	  <h4>Cacheable Methods: </h4>
+	    <ul>
+	      <li>
+	      <span class="item">if a cache is allowed to store a copy of the response message for use in answering subsequent requests.</span>
+	      </li>
+	    </ul>
 	</div>
 	</section>
 
 
 	<section class="sect">
-	<h3 id="t6head">Topic 6 <span></span></h3>
+	<h3 id="t6head">HTTP MESSAGE HEADERS<span></span></h3>
 	<div id="topic6">
-			asdasdsadsadasdasdasdsadsadsadsadasdasdasdasdasd
+	  <h4>General Header Fields: </h4>
+	    <ul>
+	      <li>
+	      <span class="item">Request Line</span>
+	      <span class="desc"> eg. GET /index.html HTTP/1.1</span>
+	      </li>
+	    </ul>
+
 	</div>
 	</section>
 

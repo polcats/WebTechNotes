@@ -339,14 +339,14 @@
 	      <li>
 	      <span class="item">Option</span>
 	      <span class="desc">represents a request for information about the communication options available on the request/response chain identified by the Request-URI.</span>
-	      <span class="desc">•	Allows the client to determine the options and/or requirements associated with a resource, or the capabilities of a server, without implying a resource action or initiating a resource retrieval.</span>
+	      <span class="desc">Allows the client to determine the options and/or requirements associated with a resource, or the capabilities of a server, without implying a resource action or initiating a resource retrieval.</span>
 	      </li>
 
 	      <li>
 	      <span class="item">Trace</span>
 	      <span class="desc">used to invoke a remote, application-layer loop-back of the request message.</span>
 	      <span class="desc">allows the client to see what is being received at the other end of the request chain and use that data for testing or diagnostic information.</span>
-	      <span class="desc">•	The final recipient of the request SHOULD reflect the message received back to the client as the entity-body of a 200 (OK) response.</span>
+	      <span class="desc">The final recipient of the request SHOULD reflect the message received back to the client as the entity-body of a 200 (OK) response.</span>
 	      </li>
 
 	      <li>
@@ -386,11 +386,229 @@
 	  <h4>General Header Fields: </h4>
 	    <ul>
 	      <li>
-	      <span class="item">Request Line</span>
-	      <span class="desc"> eg. GET /index.html HTTP/1.1</span>
+	      <span class="item">Cache Control </span>
+	      <span class="desc">is used to specify directives that MUST be obeyed by all caching mechanisms along the request/response chain.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Connection </span>
+	      <span class="desc">the sender to specify options that are desired for that particular connection and MUST NOT be communicated by proxies over further connections</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Date</span>
+	      <span class="desc">represents the date and time at which the message was originated, having the same semantics as orig-date in RFC 822.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Pragma</span>
+	      <span class="desc">is used to include implementation- specific directives that might apply to any recipient along the request/response chain.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Trailer</span>
+	      <span class="desc">indicates that the given set of header fields is present in the trailer of a message encoded with chunked transfer-coding.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Transfer-Encoding</span>
+	      <span class="desc">indicates what (if any) type of transformation has been applied to the message body in order to safely transfer it between the sender and the recipient.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Upgrade</span>
+	      <span class="desc">allows the client to specify what additional communication protocols it supports and would like to use if the server finds it appropriate to switch protocols.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Via</span>
+	      <span class="desc">MUST be used by gateways and proxies to indicate the intermediate protocols and recipients between the user agent and the server on requests, and between the origin server and the client on responses.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Warning</span>
+	      <span class="desc">used to carry additional information about the status or transformation of a message which might not be reflected in the message.</span>
 	      </li>
 	    </ul>
 
+	    <h4>Request Header Fields: </h4>
+	    <ul>
+	      <li>
+	      <span class="item">Accept</span>
+	      <span class="desc">be used to specify certain media types which are acceptable for the response.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Accept-Charset</span>
+	      <span class="desc">can be used to indicate what character sets are acceptable for the response.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Accept-Encoding</span>
+	      <span class="desc">similar to Accept, but restricts the content-codings (section 3.5) that are acceptable in the response.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Accept-Language</span>
+	      <span class="desc">is similar to Accept, but restricts the set of natural languages that are preferred as a response to the request.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Authorization</span>
+	      <span class="desc">consists of credentials containing the authentication information of the user agent for the realm of the resource being requested.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Expect</span>
+	      <span class="desc">is used to indicate that particular server behaviors are required by the client.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">From</span>
+	      <span class="desc">if given, SHOULD contain an Internet e-mail address for the human user who controls the requesting user agent.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Host</span>
+	      <span class="desc">specifies the Internet host and port number of the resource being requested, as obtained from the original URI given by the user or referring resource.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">If-Match</span>
+	      <span class="desc">is used with a method to make it conditional.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">If-Modified-Since</span>
+	      <span class="desc">is used with a method to make it conditional: if the requested variant has not been modified since the time specified in this field, an entity will not be returned from the server; instead, a 304 (not modified) response will be returned without any message-body.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">If-None_Match</span>
+	      <span class="desc">is used with a method to make it conditional.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">If-Range</span>
+	      </li>
+
+	      <li>
+	      <span class="item">If-Unmodified-Since</span>
+	      <span class="desc">is used with a method to make it conditional.</span>
+	      <span class="desc">If the requested resource has not been modified since the time specified in this field, the server SHOULD perform the requested operation as if the If-Unmodified-Since header were not present.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Max-Forwards</span>
+	      <span class="desc">provides a mechanism with the TRACE (section 9.8) and OPTIONS (section 9.2) methods to limit the number of proxies or gateways that can forward the request to the next inbound server.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Proxy-Authorization</span>
+	      <span class="desc">allows the client to identify itself (or its user) to a proxy which requires authentication.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Range</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Referer</span>
+	      <span class="desc">request-header field allows the client to specify, for the server's benefit, the address (URI) of the resource from which the Request-URI was obtained.</span>
+	      </li>
+	    </ul>
+
+	    <h4>Response Header Fields: </h4>
+	    <ul>
+	      <li>
+	      <span class="item">Acept-Ranges</span>
+	      <span class="desc">allows the server to indicate its acceptance of range requests for a resource.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Age</span>
+	      <span class="desc">conveys the sender's estimate of the amount of time since the response (or its revalidation) was generated at the origin server.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">E-Tag</span>
+	      <span class="desc">provides the current value of the entity tag for the requested variant.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Location</span>
+	      <span class="desc">is used to redirect the recipient to a location other than the Request-URI for completion of the request or identification of a new resource.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Retry-After</span>
+	      <span class="desc">be used with a 503 (Service Unavailable) response to indicate how long the service is expected to be unavailable to the requesting client.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Server</span>
+	      <span class="desc">contains information about the software used by the origin server to handle the request.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Vary</span>
+	      <span class="desc">indicates the set of request-header fields that fully determines, while the response is fresh, whether a cache is permitted to use the response to reply to a subsequent request without revalidation.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">WWW-Authentication</span>
+	      <span class="desc">be included in 401 (Unauthorized) response messages. The field value consists of at least one challenge that indicates the authentication scheme(s) and parameters applicable to the Request-URI.</span>
+	      </li>
+	    </ul>
+
+	    <h4>Entity Header Fields: </h4>
+	    <ul>
+	      <li>
+	      <span class="item">Allow</span>
+	      <span class="desc">lists the set of methods supported by the resource identified by the Request-URI.</span>
+	      <span class="desc">The purpose of this field is strictly to inform the recipient of valid methods associated with the resource.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Content-Encoding</span>
+	      <span class="desc">•	allow a document to be compressed without losing the identity of its underlying media type.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Content-Length</span>
+	      <span class="desc">indicates the size of the entity-body, in decimal number of OCTETs, sent to the recipient or, in the case of the HEAD method, the size of the entity-body that would have been sent had the request been a GET.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Content-Location</span>
+	      <span class="desc">MAY be used to supply the resource location for the entity enclosed in the message when that entity is accessible from a location separate from the requested resource's URI.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Content-MD5</span>
+	      <span class="desc">an MD5 digest of the entity-body for the purpose of providing an end-to-end message integrity check (MIC) of the entity-body.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Content-Range</span>
+	      <span class="desc">sent with a partial entity-body to specify where in the full entity-body the partial body should be applied.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Content-Type</span>
+	      <span class="desc">indicates the media type of the entity-body sent to the recipient or, in the case of the HEAD method, the media type that would have been sent had the request been a GET.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Expires</span>
+	      <span class="desc">gives the date/time after which the response is considered stale.</span>
+	      </li>
+
+	      <li>
+	      <span class="item">Last-Modified</span>
+	      <span class="desc">indicates the date and time at which the origin server believes the variant was last modified.</span>
+	      </li>
+	    </ul>
 	</div>
 	</section>
 

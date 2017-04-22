@@ -1,0 +1,40 @@
+CSS PREPROCESSORS and CSS FRAMEWORKS:
+
+CSS Preprocessors
+	- allows to have advance syntax
+	- example is a nested declarations in stylesheets
+
+	SASS(Sysntactically Awesome Stylesheet)-->popular preprocessor
+
+SAMPLE CODE
+$col:red /*allows you to assign a variable*/
+@mixin pm($v) { /*when you want to mix it in a declaration
+	margin: $v;
+	padding $v;
+}
+
+@function twice($v) {
+	@return 2*$v;
+}
+
+@for $i from 1 through 6 {
+	h#{$i} {       /*string interpolation*/
+	   font-size:22px-twice($i);
+	}
+}
+
+div {
+	margin:$v;
+	padding:$v;
+
+	p {
+      color:$col;
+      backgroundcolor:#fff
+      @include pm;
+      font: {
+      		 size:1.5 rem;
+      		 family:serif;
+      		}
+	  }
+}
+

@@ -1,0 +1,21 @@
+CSS RULE PRECEDENCE:
+
+1. by origin and importance
+	example: color = red !important
+	FROM HIGHEST TO LOWEST
+	1 user agent important declarations
+	2 user important declarations
+	3 author important declarations
+	4 author normal declarations
+	5 user normal declarations
+	6 user agent normal declarations
+
+2. by specificity
+	FROM HIGHEST TO LOWERS
+	1 inline style
+	2 number of id selectors
+	3 number f class selectors,attribute selectors & pseudo-classes
+	4 number of type selectors & pseduo-elements
+
+3. by order
+	- last declaration gets higher priority

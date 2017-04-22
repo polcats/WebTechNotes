@@ -1,0 +1,30 @@
+CSS FUNDAMENTALS
+CSS(Cascading style sheets)
+	--> used to specify the presentation aspects of HTML
+	--> developed by Hakon Wium Lie(CHSS) & Bert Bos(SSP)
+
+**Versions are adminitstered by W3C
+CSS 1 -->1996
+CSS 2.1 --> June 2011 --> contains everything from basic contents & so on
+CSS 3 --> don't have MONOLYTIC specs, instead, divied into MODULES
+	  --> already recommendations not specifications
+	  --> to allow vendor browsers to be supported in a way they want
+	  --> work can be in parallel
+	  --> there are no already centralized repository
+	  -->screen, speech, print --> media types
+
+CSS Preprocessors --> examples are Sass, Less, etc.
+CSS Framework --> examples are Bootstrap, Foundation, Materialize, 960 Grid System, etc.
+
+HTML/XHTML Stylesheets
+1. Author styles --> css created by the author
+2. user styles --> style that was used by the user (this can be a solution for color blindness)
+3. user agent styles --> css that is in the browser by default
+*Reset CSS --> defines initial values for your CSS
+
+
+******************************************************************************************
+Author styles
+	external stylesheet(recommended)(uses link tag)
+	embedded styles
+	inline styles

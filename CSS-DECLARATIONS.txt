@@ -1,0 +1,28 @@
+CSS DECLARATIONS
+
+PROPERTIES
+	shorthand properties
+		--> a shorthand for several items(ex. font)
+	vendor specific extensions(experimental features)
+		-->a.k.a vendor prefixes
+
+VALUES
+	keywords
+		global keyword values--> initial, inherit, unset, revert
+	numbers
+	dimensions
+		length,angle,duration
+		lenth units
+			font relative: em, ex, ch
+			viewport-percentage: vw, vh, vmin, vmax
+			absolute lenths: cm, mm, q
+		angle units: deg, grad
+		duration units: s, ms
+		frequency units: hz, khz
+		resolution units: dpi, dpcm dppx
+	percentages
+	URL's and URI's
+	colors
+	strings
+	functions: calc(), attr(), counters(), linear-gradient(), 
+			   radial-gradient(), translate(), scale(), rotate()

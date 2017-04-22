@@ -1,0 +1,65 @@
+CSS
+- language used to specify the presentation aspects of structurally markep up documents
+- developed by Hakon Wium Lie (CHSS) and Bert Bos (SSP)
+- 1996 (earliest version)
+- 2011 CSS 2.1
+
+CSS 3 modules
+- specifications are needed to be checked individually
+- Splitting CSS into modules also allows the W3C to bring those modules up to Recommendation level at different rates.
+
+CSS Preprocessors
+- Sass, Less, 960 Grid System, Bootstrap, Foundation, Materialize, etc.
+
+HTML/XHTML Stylesheets
+- author styles [external (recommended), embedded, inline]
+- user style [user-defined/preference mode]
+- useragent styles
+- inital CSS (reset CSS)
+
+External CSS
+- media can be specified [orientations: portrait / landscape]
+
+CSS Statements
+@-Rules:
+
+@charset
+@import
+@media
+@font-face
+@keyframes
+@page
+@namespace
+@document
+
+CSS Rule Sets
+- consists of a selector; then
+- declaration block; with
+- 0 or more properties
+
+Selector - structure used as a condition in a CSS rule to determine which elements in the document tree are matched by the selector; they get applied with the CSS specified after the selector.
+
+Selector Sequence
+ex.
+div#ID > p.class[attribute] + span:first-child::after
+
+Type
+Universal
+Attribute
+Class
+ID
+Pseudo Class
+Pseudo Element
+
+> - Combinator
+first-child - pseudo-class
+::after - pseudo element
+
+Universal Selector - *
+
+h1, h2, h3 { } 
+/*this is called a group*/
+
+
+
+

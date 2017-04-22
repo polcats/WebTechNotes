@@ -1,0 +1,12 @@
+Cascade - styles from different selectors will combine
+
+CSS Declarations
+- properties have default values
+initial, inherit, revert
+
+CSS3 Cheatsheet [Can I Use (Website)]
+
+Shorthand Methods
+DefaultValues
+Useragent Extensions (like moz, webkit..etc)
+Rendering engines (like webkit, blink, gecko, trident, khtml, presto..etc)

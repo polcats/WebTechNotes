@@ -1,0 +1,67 @@
+Pseudo Classes, Combinators, and CSS Rule Precedence
+
+:target pseudo class - target in page link (bookmark)
+:lang() pseudo class - target elements based on language
+
+UI elements
+:enabled
+:disable
+:checked
+:indeterminate
+
+Structural
+:root
+:first-child
+:last-child
+:only-child
+:nth-child()
+:nth-last-child -> an+b form [like 2n+1 for odd]
+:first-of-type
+:last-of-type
+:only-of-type
+:nth-of-type
+:nth-last-of-type
+:empty (no children)
+
+Negation
+:not() -> inverst the logic
+
+Combinator
+- descendant (div p)
+- child (div > p)
+- sibling
+ *adjacent (+)
+ *general (~)
+
+Pseudo Elements
+CSS 3 uses two colons
+::first-letter
+::first-line
+::before
+::after
+
+CSS Rule Precedence
+- by origin and importance
+- by specificity
+- by order (last one wins)
+
+declarations
+user agent !important
+user !important
+author !important
+author normal
+user normal
+useragent normal
+
+
+By specificity
+- inline style
+- number of ID Selectors
+- number of class selectors, attribute selectors, and pseudo classes
+- number of type selectors and pseudo elements
+
+	a		b 		c
+p	0		0		1	= 1
+p.y	0		1		1	= 2	
+p#x	1		0		1	= 2
+p#x.y	1		1		1	= 3 [Wins]

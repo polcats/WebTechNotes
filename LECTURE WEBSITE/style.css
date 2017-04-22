@@ -1,0 +1,146 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+body {}
+
+/* GENERAL CONTENT */
+section {
+	margin: 0px;
+	padding: 0px;
+}
+section.sect {
+	width: 100%;
+	text-align: center;
+}
+section h3 {
+	background: #49412c;
+	font-size: 25px;
+	font-family: "Century Gothic";
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	cursor: hand;
+	transition: 0.6s ease all;
+	padding: 20px;
+	margin: 0px;
+}
+section h3:hover {
+	background-color: #97743a;
+}
+section h3 span {
+	font-size: 18px;
+	font-family: "Century Gothic";
+	color: #fff;
+	font-style: italic;
+}
+section div {
+	padding: 50px;
+	text-align: justify;
+	font-family: "Microsoft Sans Serif";
+	font-size: 14px;
+	column-count: 2;
+	/*min-height: 70vh;*/
+}
+section div h4 {
+	font-size: 17px;
+	text-decoration: underline;
+	text-transform: uppercase;
+}
+
+
+/* NAVIGATION */
+nav#nav_wrap {
+	background: #000;
+	opacity: 0.8;
+	border-bottom: 3px solid #fff;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+nav#nav_wrap ul {
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+	width: 100%;
+}
+nav#nav_wrap li {
+	float: left;
+	line-height: 50px;
+	width: 33.3333%;
+	text-align: center;
+}
+nav#nav_wrap li a {
+	font-family: "Century Gothic";
+	color: #fff;
+	text-decoration: none;
+	font-size: 25px;
+}
+nav#nav_wrap li a:hover {
+	text-decoration: underline;
+}
+
+/*HEADER*/
+header {
+	background: #eee url(background.jpg) center center no-repeat fixed;
+	height: 200px;
+	margin-top: 0px;
+	padding-top: 130px;
+	text-align: center;
+}
+header h1 {
+	font-family: "Century Gothic";
+	font-size: 45px;
+	color: #000;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+}
+header h2 {
+	font-size: 30px;
+	font-family: "Calibri";
+	margin: 0px;
+	padding: 0px;
+	color: #000;
+}
+
+footer {
+	margin: 0px;
+	height: 50px;
+	line-height: 50px;
+	background: #eee;
+	text-align: center;
+	font-family: "Microsoft Sans Serif";
+}
+
+span.item{
+	font-weight: bold;
+	font-size: 15px;
+	margin: 12px 0px 12px 0px;
+	display: block;
+	text-indent: 25px;
+}
+span.desc {
+	font-weight: normal;
+	font-size: 12px;
+	clear: both;
+	display: block;
+	text-indent: 45px;
+	margin: 10px 0px 10px 0px;
+}
+span.item::first-letter, span.desc::first-letter {
+	text-transform: uppercase;
+}
+span.note {
+	display: block;
+	margin: 10px 0px 10px 0px;
+}
+span.note::before {
+	content: "NOTE: ";
+	color: red;
+}

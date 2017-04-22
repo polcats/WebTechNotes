@@ -1,0 +1,38 @@
+1. HTML
+2. what is HTML
+3. What is HTML's modern web development
+4. Who invented HTML
+5. Who oversees the development of HTML? 
+6. What are the versions of HTML?
+	1.0
+	2.0 RFC 1866
+	3.0 [w3c]
+	3.2 [w3c]
+	4.0 [w3c]
+	4.01 [w3c]
+	5.0
+XHTML
+	1.0
+	1.1
+	2.0
+
+7. What documents specify the HTML standards?
+8. What is the syntax of HTML?
+
+HTML (Hypertext Markup Language) 
+- language used to create websites
+- derived from SGML
+
+Typical Webpages
+- structure and content (only html)
+- presentation/aesthehics (only css)
+- behavioral/interaction
+
+HTML Doctype - triggers standard rendering
+- no doctype (quirks mode)
+- may help in cross-browserness
+
+<h1>			*Content*			</h1>
+^
+(name tag)						(End Tag)
+

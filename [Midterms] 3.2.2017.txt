@@ -1,0 +1,55 @@
+Index of Elements: https://www.w3.org/TR/html4/index/elements.html
+Index of Attributes: https://www.w3.org/TR/html4/index/attributes.html
+
+DOM Interface
+- The Document Object Model (DOM) is an application programming interface (API) for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.
+
+
+
+html
+	head
+		title, base, link, meta, style
+	body
+		article, aside, nav, section
+		header, footer
+		main
+		address (contact info)
+		div
+
+		h1-h6
+
+		p
+		hr (thematic break)
+		blockquote
+
+		ol, ul
+			li
+		dl
+			dt, dd
+
+		figure
+			figcaption
+		a
+		em, strong
+		cite, q
+		dfn, abbr
+		ruby, rb, rt, rte, rp (asian characters)
+		data, time
+		code, var, samp, kbd
+		sup, sub
+		i, b, u, mark
+		bdi, bdo
+		span
+		br, wbr (window break)
+		ins, del
+
+		table
+			caption
+			colgroup, col
+			thead, tbody, tfoot
+				tr
+					td, th
+		form
+			label
+			input
+			button

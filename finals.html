@@ -1,0 +1,188 @@
+<DOCTYPE! html>
+<html>
+	<head>
+	<title>Web Tech</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+
+	<nav id="nav_wrap">
+		<ul>
+		<li><a href="index.html">Prelims</a></li>
+		<li><a href="midterms.html">Midterms</a></li>
+		<li><a href="finals.html">Finals</a></li>
+		</ul>
+	</nav>
+
+	<header class="section" id="cover">
+		<h1 id="signature">Web Technologies Lecture Notes</h1>
+		<h2 id="subtitle">[FINALS]</h4>
+	</header>
+
+
+
+<section class="sect">
+		<h3 id="t1head">Java<span></span></h3>
+			<div id="topic1">
+
+			testtest
+
+			</div>
+			</div>
+		</section>
+
+
+<section class="sect">
+		<h3 id="t2head">Node<span></span></h3>
+			<div id="topic2">
+
+			testtest
+
+			</div>
+			</div>
+		</section>
+
+
+		<section class="sect">
+		<h3 id="t3head">PHP<span></span></h3>
+			<div id="topic3">
+
+			<h4>Introduction</h4>
+				<span class="desc">The most popular server-side language on the web, PHP is designed to pull and edit information in the database. It's most commonly bundled with databases written in the SQL language. PHP was designed strictly for the web and remains one of the most widely used languages around. It's easy to install and deploy, is staying competitive with lots of modern frameworks, and is the foundation for a number of content-management systems. PHP-powered sites: WordPress, Wikipedia, Facebook.</span>
+				<span class="desc">Several predefined variables in PHP are "superglobals", which means they are available in all scopes throughout a script. There is no need to do global $variable; to access them within functions or methods.</span>
+
+			<h4>Superglobal variables</h4>
+				<span class="item">$GLOBALS</span>
+				<span class="desc">An associative array containing references to all variables which are currently defined in the global scope of the script. The variable names are the keys of the array.</span>
+				
+				<span class="item">$_SERVER</span>
+				<span class="desc">$_SERVER is an array containing information such as headers, paths, and script locations. The entries in this array are created by the web server. There is no guarantee that every web server will provide any of these; servers may omit some, or provide others not listed here. That said, a large number of these variables are accounted for in the » CGI/1.1 specification, so you should be able to expect those.</span>
+
+				<span class="item">$_GET</span>
+				<span class="desc">$HTTP_GET_VARS contains the same initial information, but is not a superglobal. (Note that $HTTP_GET_VARS and $_GET are different variables and that PHP handles them as such)</span>
+
+				<span class="item">$_POST</span>
+				<span class="desc">An associative array of variables passed to the current script via the HTTP POST method when using application/x-www-form-urlencodedor multipart/form-data as the HTTP Content-Type in the request. $HTTP_POST_VARS contains the same initial information, but is not a superglobal. (Note that $HTTP_POST_VARS and $_POST are different variables and that PHP handles them as such)</span>
+
+				<span class="item">$_FILES</span>
+				<span class="desc">An associative array of items uploaded to the current script via the HTTP POST method. The structure of this array is outlined in thePOST method uploads section. $HTTP_POST_FILES contains the same initial information, but is not a superglobal. (Note that $HTTP_POST_FILES and $_FILES are different variables and that PHP handles them as such)</span>
+
+				<span class="item">$_COOKIE</span>
+				<span class="desc">An associative array of variables passed to the current script via HTTP Cookies. $HTTP_COOKIE_VARS contains the same initial information, but is not a superglobal. (Note that $HTTP_COOKIE_VARS and $_COOKIE are different variables and that PHP handles them as such)
+				</span>
+
+				<span class="item">$_SESSION</span>
+				<span class="desc">An associative array containing session variables available to the current script. See the Session functions documentation for more information on how this is used. $HTTP_SESSION_VARS contains the same initial information, but is not a superglobal. (Note that $HTTP_SESSION_VARS and $_SESSION are different variables and that PHP handles them as such)
+				</span>
+
+				<span class="item">$_REQUEST</span>
+				<span class="desc">An associative array that by default contains the contents of $_GET,$_POST and $_COOKIE.</span>
+
+				<span class="item">$_ENV</span>
+				<span class="desc">These variables are imported into PHP's global namespace from the environment under which the PHP parser is running. Many are provided by the shell under which PHP is running and different systems are likely running different kinds of shells, a definitive list is impossible.</span>
+
+
+				<h4>PHP Session Functions</h4>
+				<span class="item">session_abort</span>
+				<span class="desc">Discard session array changes and finish session</span>
+
+				<span class="item">session_cache_expire</span>
+				<span class="desc">Return current cache expire</span>
+
+				<span class="item">session_cache_limiter</span>
+				<span class="desc">Get and/or set the current cache limiter</span>
+
+				<span class="item">session_commit</span>
+				<span class="desc">Alias of session_write_close</span>
+
+				<span class="item">session_create_id</span>
+				<span class="desc">Create new session id</span>
+
+				<span class="item">session_decode</span>
+				<span class="desc">Decodes session data from a session encoded string</span>
+
+				<span class="item">session_destroy</span>
+				<span class="desc">Destroys all data registered to a session</span>
+
+				<span class="item">session_encode</span>
+				<span class="desc">Encodes the current session data as a session encoded string</span>
+
+				<span class="item">session_gc</span>
+				<span class="desc">Perform session data garbage collection</span>
+
+				<span class="item">session_get_cookie_params</span>
+				<span class="desc">Get the session cookie parameters</span>
+
+				<span class="item">session_id</span>
+				<span class="desc">Get and/or set the current session id</span>
+
+				<span class="item">session_is_registered</span>
+				<span class="desc">Find out whether a global variable is registered in a session</span>
+
+				<span class="item">session_module_name</span>
+				<span class="desc">Get and/or set the current session module</span>
+
+				<span class="item">session_name</span>
+				<span class="desc">Get and/or set the current session name</span>
+
+				<span class="item">session_generate_id</span>
+				<span class="desc">Update the current session id with a newly generated one</span>
+
+				<span class="item">session_register_shutdown</span>
+				<span class="desc">Session shutdown function</span>
+
+				<span class="item">session_register</span>
+				<span class="desc">Register one or more global variables with the current session</span>
+
+				<span class="item">session_reset</span>
+				<span class="desc">Re-initialize session array with original values</span>
+
+				<span class="item">session_save_path</span>
+				<span class="desc">Get and/or set the current session save path</span>
+
+				<span class="item">session_set_cookie_params</span>
+				<span class="desc">Set the session cookie parameters</span>
+
+				<span class="item">session_set_save_handler</span>
+				<span class="desc">Sets user-level session storage functions</span>
+
+				<span class="item">session_start</span>
+				<span class="desc">Start new or resume existing session</span>
+
+				<span class="item">session_status</span>
+				<span class="desc">Returns the current session status</span>
+
+				<span class="item">session_unregister</span>
+				<span class="desc">Unregister a global variable from the current session</span>
+
+				<span class="item">session_unset</span>
+				<span class="desc">Free all session variables</span>
+
+				<span class="item">session_write_close</span>
+				<span class="desc">Write session data and end session</span>
+			</div>
+			</div>
+		</section>
+
+
+<section class="sect">
+		<h3 id="t4head">Security<span></span></h3>
+			<div id="topic4">
+
+			testtest
+
+			</div>
+			</div>
+		</section>
+
+
+
+
+
+<footer>
+&copy; Web Technologies Lecture Site 2017
+</footer>
+	</body>
+</html>

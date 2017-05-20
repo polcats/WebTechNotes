@@ -167,14 +167,43 @@
 		</section>
 
 
-<section class="sect">
-		<h3 id="t4head">Security<span></span></h3>
-			<div id="topic4">
+		<section class="sect">
+			<h3 id="t4head">Security<span></span></h3>
+				<div id="topic4">
 
-			testtest
+			<h4>Introduction</h4>
+				<span class="desc">There are a lot of security issues that are present in the web. The Open Web Application Security Project (OWAS) is an online community that releases the top 10 web security risks every 3 years.</span>
+				<span class="desc">Listed here are some of 2017's web security risks</span>
 
-			</div>
-			</div>
+			<h4>Web Security Risks</h4>
+				<span class="item">Cross-site scripting</span>
+				<span class="desc">Injecting lines of JavaScript into web pages. If not defended against, a hacker can submit malicious code through the search bar, for example, or post it in a user comment</span>
+				
+				<span class="item">Session Hijacking</span>
+				<span class="desc">Each unique user is assigned a "session" when they log in to a website. Session hijackers will jump into the session of another user, reading information as it passes between the user and the server.</span>
+
+				<span class="item">Parameter Manipulation</span>
+				<span class="desc">Websites often pass information from one web page to the next through URL parameters. For example, if you search on Google, your search terms will be passed to the results page through the URL. A hacker can take advantage of this fact to rewrite these parameters in harmful ways.</span>
+
+				<span class="item">Buffer overflow</span>
+				<span class="desc">A buffer is a small amout of space allotted to store data. If a buffer is overloaded, the extra data will overwrite data in other areas. Hackers have exploited this knowlded to overfill a buffer, than overwrite other data with their own malicious code.</span>
+
+				<span class="item">Denial of service</span>
+				<span class="desc">Denial of Service attacks are simple but effective. They operate by overwhelming a site with requests for information, severely slowing the operation of a website or bringing it down entirely</span>
+
+				<span class="item">SQL Injection</span>
+				<span class="desc">SQL injection works similarly to cross-site scripting; in this case, however, it is malicious SQL statements that are inserted in the site. These statements are intended to manipulate the database in some way - either accessing sensitive data, or deleting it entirely, causing major headaches for the owners.</span>
+
+				<h4>Prevention</h4>
+				<span class="item">What can you do to avoid these threats?</span>
+				<span class="desc">The most important thing is not to underestimate the importance of web application security - and put your users and yourself at risk.</span>
+
+				<span class="desc">You can secure a web application by restricting access to certail URL patterns in the web application or programmatically using security calls in your servlet code.</span>
+
+				<span class="desc">At run time, your username and password are authenticated using the applicable security realm for the web application. Authorization is verified according to the security constraints configure in web.xml or the external policies that might have been created for the web application using the Administration Console</span>
+
+				</div>
+				</div>
 		</section>
 
 

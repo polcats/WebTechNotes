@@ -6,7 +6,4 @@ $(document).ready(function(){
 		eval("$(\"#t"+i+"head\").click(function(){  $(\"#topic"+i+"\").toggle(200);});");
 		eval("$(\"#topic"+i+"\").hide();");
 	}
-
-	// $("#topic4").show(); // automatically shows a topic content
-
 });
